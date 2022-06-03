@@ -1,11 +1,29 @@
 import React from 'react';
-import ContadorScreen from './src/screens/ContadorScreen';
+import { SafeAreaView } from 'react-native';
+import TareaScreen from './src/screens/TareaScreen';
+// import FlexScreen from './src/screens/FlexScreen';
+// import PositionScreen from './src/screens/PositionScreen';
+// import DimensionesScreen from './src/screens/DimensionesScreen';
+// import BoxObjectModelScreen from './src/screens/BoxObjectModelScreen';
+// import ContadorScreen from './src/screens/ContadorScreen';
 // import HolaMundoScreen from './src/screens/HolaMundoScreen';
 
 const App = () => {
      return (
-          // <HolaMundoScreen />
-          <ContadorScreen />
+          <SafeAreaView style={{
+               flex: 1,
+               // Para cubrir la parte de arriba de iphone
+               backgroundColor: '#28425B',
+               }}>
+
+               {/* <HolaMundoScreen /> */}
+               {/* <ContadorScreen />  */}
+               {/* <BoxObjectModelScreen /> */}
+               {/* <DimensionesScreen /> */}
+               {/* <PositionScreen /> */}
+               {/* <FlexScreen /> */}
+               <TareaScreen />
+          </SafeAreaView>
      );
 };
 
